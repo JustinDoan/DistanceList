@@ -10,6 +10,12 @@ namespace DistanceList
     {
         static void Main(string[] args)
         {
+            List<string> words = new List<string>() { "JavaScript", "TypeScript", "Ruby", "Pascal", "COBOL" };
+            WordList wordList = new WordList(words);
+            Console.WriteLine(wordList.FindDistanceTwoWords("JavaScript", "COBOL"));
+
+
+
         }
     }
 }
